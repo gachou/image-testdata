@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/gachou/image-testdata/issues"
   },
-  "main": "index.js",
+  "private": true,
   "license": "MIT",
   "scripts": {
     "preformat": "standard --version || npm -g install standard",
@@ -31,7 +31,6 @@
   "dependencies": {},
   "devDependencies": {
     "ghooks": "^1.0.3",
-    "mocha": "^2.3.3",
     "thoughtful-release": "^0.3.0"
   },
   "standard": {
