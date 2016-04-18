@@ -39,9 +39,7 @@
     ]
   },
   "files": [
-    "index.js",
-    "lib",
-    "bin"
+    "data"
   ],
   "config": {
     "ghooks": {
