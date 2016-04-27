@@ -28,7 +28,9 @@
     "version": "thoughtful changelog -o -a && npm run thought",
     "preversion": "npm run thoughtcheck"
   },
-  "dependencies": {},
+  "dependencies": {
+    "q-io": "^1.13.2"
+  },
   "devDependencies": {
     "ghooks": "^1.0.3",
     "thoughtful-release": "^0.3.0"
@@ -46,5 +48,5 @@
       "pre-commit": "standard"
     }
   },
-  "keywords": [  ]
+  "keywords": []
 }
