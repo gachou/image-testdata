@@ -21,4 +21,13 @@ describe('the image-testdata-module', function () {
     ])
     expect(target).to.deep.equal(source)
   })
+
+  it('should save an the image by another name, if "renameTo2 is provided', async function () {
+    await imageTestData('no-xmp-identifier.jpg', 'test-tmp', {renameTo: 'img.jpg'})
+    const [source, target] = await Promise.all([
+      readFile('data/no-xmp-identifier.jpg'),
+      readFile('test-tmp/img.jpg')
+    ])
+    expect(target).to.deep.equal(source)
+  })
 })
